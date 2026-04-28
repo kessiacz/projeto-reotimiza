@@ -57,7 +57,3 @@ a.addEventListener('click', e => {
     if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 });
 });
-document.querySelectorAll('.portfolio-item video').forEach(video => {
-  video.addEventListener('mouseenter', () => video.play());
-  video.addEventListener('mouseleave', () => video.pause());
-});
