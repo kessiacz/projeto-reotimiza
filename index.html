@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reotimiza Comunicação | Branding · Tráfego · Social Media</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="closeMobileNav()">✕</button>
+  <a href="#sobre" onclick="closeMobileNav()">Sobre</a>
+  <a href="#servicos" onclick="closeMobileNav()">Serviços</a>
+  <a href="#portfolio" onclick="closeMobileNav()">Portfólio</a>
+  <a href="#contato" onclick="closeMobileNav()">Contato</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="logo-icon"><img src="assets/img/icons/icon.png" alt="icone"></div>
+    <div class="logo-text">Reotimiza<br><span>Comunicação</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#portfolio">Portfólio</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="https://wa.me/message/TSJNKGODMD4LF1" class="nav-cta" target="_blank">Fale Conosco</a>
+  <div class="nav-hamburger" onclick="openMobileNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-tag">Agência de Comunicação Estratégica</div>
+  <h1 class="hero-h1">
+    Sua marca<br>
+    <span class="outline">merece</span><br>
+    <span class="accent">resultados.</span>
+  </h1>
+  <p class="hero-sub">Branding, Tráfego Pago, Social Media, Eventos e muito mais. Transformamos a comunicação da sua marca em confiança e resultados reais.</p>
+  <div class="hero-actions">
+    <a href="https://wa.me/message/TSJNKGODMD4LF1" class="btn-primary" target="_blank">
+      Quero meu projeto
+    </a>
+    <a href="#servicos" class="btn-ghost">Ver serviços</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-number">25<span>+</span></div>
+      <div class="stat-label">Resultados</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5<span>+</span></div>
+      <div class="stat-label">Clientes ativos</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">3<span>x</span></div>
+      <div class="stat-label">Mais conversões</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100<span>%</span></div>
+      <div class="stat-label">Comprometimento</div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item">Branding <span class="dot">·</span></div>
+    <div class="marquee-item">Tráfego Pago <span class="dot">·</span></div>
+    <div class="marquee-item">Social Media <span class="dot">·</span></div>
+    <div class="marquee-item">Eventos <span class="dot">·</span></div>
+    <div class="marquee-item">Identidade Visual <span class="dot">·</span></div>
+    <div class="marquee-item">Gestão de Redes <span class="dot">·</span></div>
+    <div class="marquee-item">Criação de Conteúdo <span class="dot">·</span></div>
+    <div class="marquee-item">Marketing Digital <span class="dot">·</span></div>
+    <!-- duplicado para loop -->
+    <div class="marquee-item">Branding <span class="dot">·</span></div>
+    <div class="marquee-item">Tráfego Pago <span class="dot">·</span></div>
+    <div class="marquee-item">Social Media <span class="dot">·</span></div>
+    <div class="marquee-item">Eventos <span class="dot">·</span></div>
+    <div class="marquee-item">Identidade Visual <span class="dot">·</span></div>
+    <div class="marquee-item">Gestão de Redes <span class="dot">·</span></div>
+    <div class="marquee-item">Criação de Conteúdo <span class="dot">·</span></div>
+    <div class="marquee-item">Marketing Digital <span class="dot">·</span></div>
+  </div>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="about-visual reveal">
+    <div class="about-visual-grid">
+      <div class="carousel-track">
+        <img src="assets/img/carousel/1.jpg" alt="">
+        <img src="assets/img/carousel/2.jpg" alt="">
+        <img src="assets/img/carousel/3.jpg" alt="">
+      </div>
+    </div>
+    <div class="about-badge">
+      <img src="assets/img/icons/icon.png" alt="logo">
+    </div>
+  </div>
+  <div class="about-content reveal">
+    <div class="section-label">Sobre nós</div>
+    <h2>Chega de agência que faz barulho.<br><span style="color:var(--pink)">Entrega silêncio.</span></h2>
+    <p style="margin-top:24px">A Reotimiza Comunicação nasceu com um propósito claro: transformar a comunicação das marcas em conexões verdadeiras e resultados concretos.</p>
+    <p>Com uma equipe criativa e estratégica, somos especialistas em assessoria de comunicação, marketing, direção de imagem e eventos inovativos. Com experiência em automação de processos e estratégias de retenção, fortalecemos marcas e aproximamos empresas dos seus clientes.</p>
+    <div class="about-values">
+      <div class="about-value">
+        <div class="about-value-icon">🎯</div>
+        <div class="about-value-title">Estratégia</div>
+        <div class="about-value-desc">Cada ação planejada com propósito e foco em resultado.</div>
+      </div>
+      <div class="about-value">
+        <div class="about-value-icon">🔥</div>
+        <div class="about-value-title">Criatividade</div>
+        <div class="about-value-desc">Conteúdo que se destaca e gera conexão real.</div>
+      </div>
+      <div class="about-value">
+        <div class="about-value-icon">📈</div>
+        <div class="about-value-title">Crescimento</div>
+        <div class="about-value-desc">Escalamos marcas com consistência e dados.</div>
+      </div>
+      <div class="about-value">
+        <div class="about-value-icon">🤝</div>
+        <div class="about-value-title">Parceria</div>
+        <div class="about-value-desc">Tratamos seu negócio como se fosse nosso.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="services-header reveal">
+    <div>
+      <div class="section-label">O que fazemos</div>
+      <h2>Nossos<br><span style="color:var(--pink)">Serviços</span></h2>
+    </div>
+    <p style="max-width:320px; color:var(--muted); font-size:15px; line-height:1.7">Soluções completas de comunicação e marketing para fortalecer e expandir a sua marca.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-icon">🎨</div>
+      <div class="service-title">Branding & Identidade Visual</div>
+      <div class="service-desc">Criamos identidades visuais que comunicam os valores da sua marca de forma consistente e memorável em todos os pontos de contato.</div>
+      <a href="#contato" class="service-link">Saiba mais →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-icon">📣</div>
+      <div class="service-title">Tráfego Pago</div>
+      <div class="service-desc">Campanhas estratégicas no Google, Meta e outras plataformas para gerar leads qualificados e maximizar seu retorno sobre investimento.</div>
+      <a href="#contato" class="service-link">Saiba mais →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-icon">📱</div>
+      <div class="service-title">Social Media & Conteúdo</div>
+      <div class="service-desc">Gerenciamento completo das suas redes sociais com criação de conteúdo estratégico que engaja, educa e converte sua audiência.</div>
+      <a href="#contato" class="service-link">Saiba mais →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="service-icon">🎬</div>
+      <div class="service-title">Produção Audiovisual</div>
+      <div class="service-desc">Vídeos, fotos e conteúdos visuais produzidos profissionalmente para elevar a percepção da sua marca no digital e nos eventos.</div>
+      <a href="#contato" class="service-link">Saiba mais →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <div class="service-icon">🎪</div>
+      <div class="service-title">Gestão de Eventos</div>
+      <div class="service-desc">Planejamento, produção e comunicação completa de eventos corporativos e experiências de marca que ficam na memória do público.</div>
+      <a href="#contato" class="service-link">Saiba mais →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <div class="service-icon">⚙️</div>
+      <div class="service-title">Automação & CRM</div>
+      <div class="service-desc">Implementamos fluxos de automação e estratégias de retenção de clientes para que seu negócio cresça de forma escalável e inteligente.</div>
+      <a href="#contato" class="service-link">Saiba mais →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section id="processo">
+  <div class="process-header reveal">
+    <div class="section-label">Como trabalhamos</div>
+    <h2>Nosso <span style="color:var(--pink)">Processo</span></h2>
+  </div>
+  <div class="process-steps reveal">
+    <div class="process-step">
+      <div class="step-circle">01</div>
+      <div class="step-title">Diagnóstico</div>
+      <div class="step-desc">Entendemos profundamente o seu negócio, público-alvo, concorrência e objetivos para traçar o caminho certo.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">02</div>
+      <div class="step-title">Estratégia</div>
+      <div class="step-desc">Desenvolvemos um plano de comunicação personalizado com metas claras, canais definidos e mensagens alinhadas.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">03</div>
+      <div class="step-title">Execução</div>
+      <div class="step-desc">Nossa equipe coloca o plano em prática com excelência criativa, prazos respeitados e qualidade de entrega.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">04</div>
+      <div class="step-title">Resultados</div>
+      <div class="step-desc">Acompanhamos métricas, otimizamos em tempo real e entregamos relatórios transparentes dos resultados alcançados.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFÓLIO -->
+<section id="portfolio">
+  <div class="portfolio-header reveal">
+    <div>
+      <div class="section-label">Portifólio</div>
+      <h2>Nosso <span style="color:var(--pink)">Portfólio</span></h2>
+    </div>
+    <a href="https://www.instagram.com/reotimizacomunica" class="btn-ghost">Ver todos →</a>
+  </div>
+  <div class="portfolio-grid reveal">
+    <div class="portfolio-item">
+      <a href="https://www.instagram.com/reel/DXXGyn5ALQL/" target="_blank">
+        <div class="portfolio-inner" style="aspect-ratio:3/4">
+          <video class="portfolio-video" muted loop playsinline>
+            <source src="assets/video/reels/reels1.mp4" type="video/mp4">
+          </video>
+
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Reels · Social Media</div>
+            <div class="portfolio-name">MICHELE NO SERTÃO DAS MARAVILHAS</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="https://www.instagram.com/reel/DW2MF_KDnMo/" target="_blank">
+        <div class="portfolio-inner" style="aspect-ratio:3/4">
+          <video class="portfolio-video" muted loop playsinline>
+            <source src="assets/video/reels/reels2.mp4" type="video/mp4">
+          </video>
+
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Reels · Social Media</div>
+            <div class="portfolio-name">FEDERA CURSOS</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="https://www.instagram.com/reel/DWmr_j5ko-I/" target="_blank">
+        <div class="portfolio-inner" style="aspect-ratio:3/4">
+          <video class="portfolio-video" muted loop playsinline>
+            <source src="assets/video/reels/reels3.mp4" type="video/mp4">
+          </video>
+
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Reels · Social Media</div>
+            <div class="portfolio-name">CACAU SHOW CAJAZEIRAS</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="https://www.instagram.com/reel/DWfMewvEViu/" target="_blank">
+        <div class="portfolio-inner" style="aspect-ratio:3/4">
+          <video class="portfolio-video" muted loop playsinline>
+            <source src="assets/video/reels/reels4.mp4" type="video/mp4">
+          </video>
+
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Reels · Social Media</div>
+            <div class="portfolio-name">CACAU SHOW CAJAZEIRAS</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="portfolio-item">
+      <a href="https://www.instagram.com/reel/DWbvSp1ACqr" target="_blank">
+        <div class="portfolio-inner" style="aspect-ratio:3/4">
+          <video class="portfolio-video" muted loop playsinline>
+            <source src="assets/video/reels/reels5.mp4" type="video/mp4">
+          </video>
+
+          <div class="portfolio-info">
+            <div class="portfolio-tag">Reels · Social Media</div>
+            <div class="portfolio-name">DR. MAXSUEL BEZERRA</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div id="cta-banner">
+  <div class="cta-banner-label">Próximo passo</div>
+  <h2 class="cta-banner-h2">Pronto para transformar<br>sua comunicação?</h2>
+  <a href="https://wa.me/message/TSJNKGODMD4LF1" class="cta-banner-btn" target="_blank">
+    Falar com a equipe
+  </a>
+</div>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="contact-info reveal">
+    <div class="section-label">Contato</div>
+    <h2>Vamos<br><span style="color:var(--pink)">conversar?</span></h2>
+    <p>Conte-nos sobre o seu projeto e descubra como podemos transformar a comunicação da sua marca em resultados reais.</p>
+    <div class="contact-items">
+      <a href="https://wa.me/message/TSJNKGODMD4LF1" class="contact-item" target="_blank">
+        <div class="contact-item-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div>
+          <div class="contact-item-label">WhatsApp</div>
+          <div class="contact-item-value">wa.me/reotimiza</div>
+        </div>
+      </a>
+      <a href="https://instagram.com/reotimizacomunica" class="contact-item" target="_blank">
+        <div class="contact-item-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div>
+          <div class="contact-item-label">Instagram</div>
+          <div class="contact-item-value">@reotimizacomunica</div>
+        </div>
+      </a>
+      <div class="contact-item">
+        <div class="contact-item-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div>
+          <div class="contact-item-label">Localização</div>
+          <div class="contact-item-value">Brasil · Atendimento Nacional</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form reveal">
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Nome</label>
+        <input class="form-input" type="text" placeholder="Seu nome" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Empresa</label>
+        <input class="form-input" type="text" placeholder="Nome da empresa" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">WhatsApp / E-mail</label>
+      <input class="form-input" type="text" placeholder="(00) 00000-0000 ou email@empresa.com" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Serviço de interesse</label>
+      <select class="form-select">
+        <option value="" disabled selected>Selecione um serviço</option>
+        <option>Branding & Identidade Visual</option>
+        <option>Tráfego Pago</option>
+        <option>Social Media & Conteúdo</option>
+        <option>Produção Audiovisual</option>
+        <option>Gestão de Eventos</option>
+        <option>Automação & CRM</option>
+        <option>Consultoria Completa</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Mensagem</label>
+      <textarea class="form-textarea" placeholder="Fale sobre sua marca e seus objetivos..."></textarea>
+    </div>
+    <button class="form-submit" onclick="submitForm()">
+      Enviar mensagem →
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="margin-bottom:0">
+        <div class="logo-icon"><img src="assets/img/icons/icon.png" alt="icon"></div>
+        <div class="logo-text">Reotimiza<br><span>Comunicação</span></div>
+      </a>
+      <p>A comunicação da sua marca está aqui. Branding, Tráfego Pago, Social Media, Eventos e muito mais.</p>
+      <div class="footer-social">
+        <a class="social-btn" href="https://instagram.com/reotimizacomunica" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="social-btn" href="https://wa.me/message/TSJNKGODMD4LF1" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a class="social-btn" href="#" target="_blank">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="#servicos">Branding</a></li>
+        <li><a href="#servicos">Tráfego Pago</a></li>
+        <li><a href="#servicos">Social Media</a></li>
+        <li><a href="#servicos">Eventos</a></li>
+        <li><a href="#servicos">Audiovisual</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/message/TSJNKGODMD4LF1" target="_blank">WhatsApp</a></li>
+        <li><a href="https://instagram.com/reotimizacomunica" target="_blank">Instagram</a></li>
+        <li><a href="#contato">Formulário</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 <span>Reotimiza Comunicação</span>. Todos os direitos reservados.</div>
+    <div class="footer-copy">Feito pela própria equipe Reotimiza</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/message/TSJNKGODMD4LF1" target="_blank" title="Fale conosco no WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+<script src="js/script.js"></script>
+</body>
+</html>
