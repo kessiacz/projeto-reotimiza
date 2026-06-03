@@ -1,13 +1,5 @@
-/* ═══════════════════════════════════════════════════════
-   REOTIMIZA COMUNICAÇÃO — Redesign Premium
-   Fontes: Big Shoulders Display + Syne + Figtree
-   Paleta: Noir Dark + Hot Pink + Cream
-═══════════════════════════════════════════════════════ */
-
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Syne:wght@400;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;1,300&display=swap');
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
   --bg:          #06060a;
   --surface:     #0d0d12;
@@ -26,9 +18,7 @@
   --font-ui:      'Syne', sans-serif;
   --font-body:    'Figtree', sans-serif;
 }
-
 html { scroll-behavior: smooth; }
-
 body {
   background: var(--bg);
   color: var(--cream);
@@ -36,7 +26,6 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
-
 /* ─── GRAIN OVERLAY ─── */
 body::before {
   content: '';
@@ -45,7 +34,6 @@ body::before {
   pointer-events: none;
   z-index: 9000;
 }
-
 /* ─── CURSOR ─── */
 #cursor {
   width: 8px; height: 8px;
@@ -72,12 +60,10 @@ body:has(button:hover) #cursor-ring {
   width: 52px; height: 52px;
   border-color: var(--pink);
 }
-
 /* ─── SCROLLBAR ─── */
 ::-webkit-scrollbar { width: 2px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--pink); }
-
 /* ─── NAV ─── */
 nav {
   position: fixed; top: 0; width: 100%; z-index: 100;
@@ -142,9 +128,14 @@ nav.scrolled {
   background: var(--pink); border-color: var(--pink);
   box-shadow: 0 0 24px var(--pink-glow);
 }
-.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.nav-hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 4px;
+  /* área de toque maior para mobile */
+  min-width: 44px; min-height: 44px;
+  align-items: center; justify-content: center;
+}
 .nav-hamburger span { width: 22px; height: 1.5px; background: var(--cream); transition: .3s; }
-
 /* ─── HERO ─── */
 #hero {
   min-height: 100vh;
@@ -247,7 +238,6 @@ nav.scrolled {
   cursor: pointer; text-decoration: none; transition: all .25s;
 }
 .btn-ghost:hover { border-color: var(--pink); color: var(--pink); }
-
 /* HERO STATS BAR */
 .hero-stats-bar {
   border-top: 1px solid var(--border);
@@ -275,7 +265,6 @@ nav.scrolled {
   font-size: 11px; color: var(--muted); letter-spacing: 0.1em;
   text-transform: uppercase; font-weight: 600; line-height: 1.4;
 }
-
 /* HERO SCROLL INDICATOR */
 .hero-scroll-indicator {
   position: absolute; bottom: 100px; right: 5%;
@@ -306,7 +295,6 @@ nav.scrolled {
 @keyframes fade-in {
   from{ opacity: 0; } to{ opacity: 1; }
 }
-
 /* ─── MARQUEE ─── */
 .marquee-wrap {
   border-top: 1px solid var(--border);
@@ -330,7 +318,6 @@ nav.scrolled {
 .marquee-item:hover { color: var(--cream); }
 .marquee-item .dot { color: var(--pink); font-size: 20px; line-height: 0; }
 @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-
 /* ─── SECTIONS COMMON ─── */
 section { padding: 110px 5%; }
 .section-label {
@@ -348,7 +335,6 @@ h2 {
   font-weight: 900; line-height: 0.92;
   text-transform: uppercase; letter-spacing: -0.01em;
 }
-
 /* ─── ABOUT ─── */
 #sobre {
   display: grid; grid-template-columns: 1fr 1fr;
@@ -356,7 +342,6 @@ h2 {
   background: var(--surface);
 }
 .about-visual { position: relative; z-index: 1; }
-
 /* ─── CAROUSEL COM SETAS ─── */
 .about-visual-grid {
   width: 100%; aspect-ratio: 4/5;
@@ -380,15 +365,12 @@ h2 {
   min-width: 100%; width: 100%; height: 100%;
   object-fit: cover; flex-shrink: 0;
 }
-/* Gradiente inferior */
 .about-visual-grid::after {
   content: '';
   position: absolute; inset: 0; z-index: 2;
   background: linear-gradient(to bottom, transparent 55%, rgba(6,6,10,0.5) 100%);
   pointer-events: none;
 }
-
-/* Botões de seta */
 .carousel-btn {
   position: absolute; top: 50%; transform: translateY(-50%);
   z-index: 10;
@@ -410,8 +392,6 @@ h2 {
 }
 .carousel-btn--prev { left: 12px; }
 .carousel-btn--next { right: 12px; }
-
-/* Dots */
 .carousel-dots {
   position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
   z-index: 10;
@@ -428,7 +408,6 @@ h2 {
   background: var(--pink);
   transform: scale(1.3);
 }
-
 .about-badge {
   position: absolute; bottom: -18px; right: -18px;
   background: var(--bg); border-radius: 50%;
@@ -457,7 +436,6 @@ h2 {
   color: var(--cream); margin-bottom: 5px;
 }
 .about-value-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
-
 /* ─── SERVICES ─── */
 #servicos { background: var(--bg); }
 .services-header {
@@ -524,7 +502,6 @@ h2 {
   white-space: nowrap;
 }
 .service-row:hover .service-row-link { opacity: 1; transform: translateX(0); }
-
 /* ─── PROCESS ─── */
 #processo {
   background: var(--surface);
@@ -566,7 +543,6 @@ h2 {
   letter-spacing: 0.04em; margin-bottom: 12px; color: var(--cream);
 }
 .step-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
-
 /* ─── TEAM ─── */
 #equipe {
   background: var(--bg);
@@ -644,29 +620,22 @@ h2 {
   background: rgba(240,20,106,0.12);
   border-color: rgba(240,20,106,0.32);
 }
-
 /* ─── PORTFOLIO ─── */
 #portfolio { background: var(--surface); }
 .portfolio-header {
   display: flex; justify-content: space-between; align-items: flex-end;
   margin-bottom: 48px; flex-wrap: wrap; gap: 20px;
 }
-
-/* Grid: coluna esquerda destaque (2 linhas), direita 2x2 */
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
-
-/* Item destaque ocupa toda a coluna esquerda */
 .portfolio-item--featured {
   grid-column: 1;
   grid-row: 1 / 3;
 }
-
-/* Cada item */
 .portfolio-item {
   position: relative;
   background: var(--card);
@@ -680,8 +649,6 @@ h2 {
   box-shadow: 0 16px 48px rgba(0,0,0,0.4);
   transform: translateY(-3px);
 }
-
-/* Link interno — ocupa todo o espaço */
 .portfolio-link {
   display: block;
   width: 100%; height: 100%;
@@ -689,12 +656,9 @@ h2 {
   text-decoration: none;
   color: inherit;
 }
-/* Para itens não-destaque, aspect-ratio garante altura consistente */
 .portfolio-item:not(.portfolio-item--featured) .portfolio-link {
   aspect-ratio: 3/4;
 }
-
-/* Vídeo */
 .portfolio-video {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
@@ -706,8 +670,6 @@ h2 {
   filter: brightness(1);
   transform: scale(1.03);
 }
-
-/* Overlay gradiente + info */
 .portfolio-overlay {
   position: absolute; inset: 0;
   display: flex; flex-direction: column;
@@ -716,11 +678,7 @@ h2 {
   background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 40%, transparent 70%);
   z-index: 2;
 }
-
-/* Área de metadados (tag + nome) — alinhada ao rodapé */
-.portfolio-meta {
-  margin-top: auto;
-}
+.portfolio-meta { margin-top: auto; }
 .portfolio-tag {
   display: inline-block;
   font-family: var(--font-ui);
@@ -742,14 +700,10 @@ h2 {
   text-shadow: 0 2px 16px rgba(0,0,0,0.8);
   line-height: 1.1;
 }
-
-/* Ações (som + badge) — alinhadas ao topo */
 .portfolio-actions {
   display: flex; align-items: center; justify-content: space-between;
   gap: 8px;
 }
-
-/* Botão de som */
 .portfolio-sound-btn {
   width: 36px; height: 36px;
   background: rgba(6,6,10,0.75);
@@ -775,8 +729,6 @@ h2 {
   border-color: rgba(240,20,106,0.4);
   color: var(--pink);
 }
-
-/* Badge do instagram */
 .portfolio-ig-badge {
   display: flex; align-items: center; gap: 5px;
   font-family: var(--font-ui); font-size: 10px; font-weight: 700;
@@ -795,7 +747,6 @@ h2 {
   background: rgba(6,6,10,0.65);
   border-color: var(--border2);
 }
-
 /* ─── CTA BANNER ─── */
 #cta-banner {
   background: var(--pink);
@@ -835,7 +786,6 @@ h2 {
   display: inline-flex; align-items: center; gap: 12px; position: relative;
 }
 .cta-banner-btn:hover { transform: translateY(-3px); box-shadow: 0 16px 44px rgba(0,0,0,0.25); }
-
 /* ─── CONTACT ─── */
 #contato {
   background: var(--bg);
@@ -902,7 +852,6 @@ h2 {
   transform: translateY(-2px);
   box-shadow: 0 10px 32px var(--pink-glow);
 }
-
 /* ─── FOOTER ─── */
 footer {
   background: var(--surface);
@@ -949,7 +898,6 @@ footer {
 }
 .footer-copy { font-size: 12px; color: var(--muted); }
 .footer-copy span { color: var(--pink); }
-
 /* ─── FLOATING WHATSAPP ─── */
 .whatsapp-float {
   position: fixed; bottom: 28px; right: 28px;
@@ -964,7 +912,6 @@ footer {
 }
 .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(34,197,94,0.55); }
 @keyframes float-btn { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
-
 /* ─── REVEAL ─── */
 .reveal {
   opacity: 0; transform: translateY(28px);
@@ -972,25 +919,90 @@ footer {
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
-/* ─── MOBILE NAV ─── */
+/* ═══════════════════════════════════════════
+   MOBILE NAV — corrigido
+   Usa opacity + visibility em vez de display
+   para que a transição funcione de verdade
+   e o botão fechar seja sempre clicável.
+═══════════════════════════════════════════ */
 .mobile-nav {
-  display: none; position: fixed; inset: 0;
-  background: var(--bg); z-index: 99;
-  flex-direction: column; align-items: center; justify-content: center; gap: 28px;
+  position: fixed; inset: 0;
+  background: var(--bg);
+  z-index: 200;
+  display: flex;                      /* sempre flex — visibilidade controlada abaixo */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+
+  /* estado padrão: invisível e não-interativo */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .3s ease, visibility .3s ease;
 }
-.mobile-nav.open { display: flex; }
+
+.mobile-nav.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Links com animação de entrada em cascata */
 .mobile-nav a {
-  font-family: var(--font-display); font-size: 48px; font-weight: 900;
-  color: var(--cream); text-decoration: none; text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: 48px; font-weight: 900;
+  color: var(--cream);
+  text-decoration: none;
+  text-transform: uppercase;
   letter-spacing: -0.01em;
-  transition: color .2s;
+  transition: color .2s, transform .2s;
+
+  /* estado inicial para a animação */
+  opacity: 0;
+  transform: translateY(16px);
 }
+
+.mobile-nav.open a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger nos links */
+.mobile-nav a:nth-child(2) { transition-delay: .05s; }
+.mobile-nav a:nth-child(3) { transition-delay: .10s; }
+.mobile-nav a:nth-child(4) { transition-delay: .15s; }
+.mobile-nav a:nth-child(5) { transition-delay: .20s; }
+.mobile-nav a:nth-child(6) { transition-delay: .25s; }
+
+.mobile-nav a,
+.mobile-nav a:nth-child(2),
+.mobile-nav a:nth-child(3),
+.mobile-nav a:nth-child(4),
+.mobile-nav a:nth-child(5),
+.mobile-nav a:nth-child(6) {
+  transition: opacity .3s ease, transform .3s ease, color .2s;
+}
+
 .mobile-nav a:hover { color: var(--pink); }
+
 .mobile-close {
-  position: absolute; top: 28px; right: 5%;
-  font-size: 26px; background: none; border: none;
-  color: var(--cream); cursor: none; font-family: var(--font-ui);
+  position: absolute;
+  top: 28px; right: 5%;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: var(--cream);
+  cursor: pointer;              /* era cursor:none — bug corrigido */
+  font-family: var(--font-ui);
+  line-height: 1;
+  padding: 8px;                 /* área de toque generosa */
+  min-width: 44px; min-height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  transition: color .2s;
+  z-index: 10;
 }
+.mobile-close:hover { color: var(--pink); }
 
 /* ─── FORM SHAKE ─── */
 @keyframes shake {
@@ -1000,7 +1012,6 @@ footer {
   60%{ transform: translateX(-4px); }
   80%{ transform: translateX(4px); }
 }
-
 /* ─── CTA BANNER DIAGONAL TEXTURE ─── */
 #cta-banner::after {
   content: '';
@@ -1014,14 +1025,12 @@ footer {
   );
   pointer-events: none;
 }
-
 /* ─── SERVICE ROW ICON HOVER PULSE ─── */
 .service-row:hover .service-row-icon { animation: icon-pop .45s ease; }
 @keyframes icon-pop {
   0%,100%{ transform: scale(1.1); }
   50%{ transform: scale(1.2) rotate(-4deg); }
 }
-
 /* ─── PROCESS STEP STAGGER ─── */
 .process-step:nth-child(1) { transition-delay: 0s; }
 .process-step:nth-child(2) { transition-delay: .08s; }
@@ -1031,12 +1040,10 @@ footer {
 /* ════════════════════════════════════════════
    RESPONSIVE
 ════════════════════════════════════════════ */
-
 /* ── 1280px ── */
 @media (max-width: 1280px) {
   .portfolio-name { font-size: 15px; }
 }
-
 /* ── 1100px ── */
 @media (max-width: 1100px) {
   .hero-sub-row { grid-template-columns: 1fr; }
@@ -1046,8 +1053,6 @@ footer {
   .hero-stats-bar .stat-item:nth-child(3) { border-right: 1px solid var(--border); }
   .team-grid { grid-template-columns: 1fr; }
   .team-card { grid-template-columns: 280px 1fr; }
-
-  /* Portfolio: 2 colunas — destaque ocupa 1 col, 4 restantes em 2x2 */
   .portfolio-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -1059,27 +1064,21 @@ footer {
   .portfolio-item--featured .portfolio-link {
     aspect-ratio: 16/9;
   }
-
   .footer-top { grid-template-columns: 1fr 1fr; }
   .service-row { grid-template-columns: 60px auto 1fr auto; }
 }
-
 /* ── 900px ── */
 @media (max-width: 900px) {
   #sobre { gap: 48px; }
 }
-
 /* ── 768px ── */
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
-
   #sobre, #contato {
     grid-template-columns: 1fr;
     gap: 48px;
   }
-
-  /* Portfolio: 1 coluna no mobile */
   .portfolio-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1093,26 +1092,21 @@ footer {
     aspect-ratio: 9/16;
   }
   .portfolio-name { font-size: 18px; }
-
   .hero-stats-bar { grid-template-columns: 1fr 1fr; }
   .hero-stats-bar .stat-item { border-right: 1px solid var(--border); }
   .hero-stats-bar .stat-item:nth-child(2n) { border-right: none; }
-
   .form-row { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .about-badge { right: 0; bottom: -8px; }
-
   .process-steps { grid-template-columns: 1fr 1fr; gap: 40px; }
   .process-steps::before { display: none; }
-
   .team-card { grid-template-columns: 1fr; }
   .team-photo-wrap { aspect-ratio: 4/3; }
   .team-photo-overlay {
     background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 50%);
   }
   .team-info { padding: 22px 18px; }
-
   .service-row {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1121,8 +1115,10 @@ footer {
   }
   .service-row-link { opacity: 1; transform: none; }
   h2 { font-size: clamp(38px, 10vw, 60px); }
+  /* cursor custom escondido em touch */
+  #cursor, #cursor-ring { display: none; }
+  body { cursor: auto; }
 }
-
 /* ── 480px ── */
 @media (max-width: 480px) {
   section { padding: 72px 5%; }
@@ -1131,22 +1127,15 @@ footer {
   .stat-number { font-size: 36px; }
   .stat-label { font-size: 10px; }
   .stat-item { gap: 10px; padding: 0 10px; }
-
   .about-badge { width: 72px; height: 72px; right: 0; bottom: -6px; }
-
   .carousel-btn { width: 34px; height: 34px; }
-
   .portfolio-actions { gap: 6px; }
   .portfolio-sound-btn { width: 32px; height: 32px; }
-
   .process-steps { grid-template-columns: 1fr; }
   .team-card { grid-template-columns: 1fr; }
   .team-photo-wrap { aspect-ratio: 1/1; }
-
   .cta-banner-h2 { font-size: clamp(34px, 12vw, 52px); }
   .cta-banner-btn { padding: 14px 28px; font-size: 13px; }
-
   .mobile-nav a { font-size: 36px; }
-
   .footer-top { grid-template-columns: 1fr; }
 }
